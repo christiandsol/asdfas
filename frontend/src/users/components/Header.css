@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  height: 100px;
+  margin-top: 10px;
+  align-items: center; /* Add this line to align items vertically in the center */
+}
+.header-part {
+  margin: 0;
+  flex: 1;
+  height: 50px;
+  /* align-items: center; Add this line to align items vertically in the center */
+  justify-content: center;
+}
+
+.part-1 {
+  flex: 2;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: xx-large;
+}
+.part-1 p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #e85a4f;
+}
+.part-2 {
+  flex: 8;
+  position: relative;
+}
+
+.part-3 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.part-4 {
+  flex: 0.5;
+}
+input[type="search"] {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  background-color: white;
+  /* outline: none;*/
+  border: 2px solid black;
+}
+
+.cart-icon {
+  width: 100%;
+  height: 100%;
+}
+/* Header End   */
+
+/* top-nav  */
+.top-nav {
+  text-align: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.top-nav-item {
+  color: black;
+  text-decoration: none;
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+/* Body   */
+.images {
+  margin-top: 100px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.webTitle {
+  font-family: "Montserrat", sans-serif;
+  color: #e85a4f;
+  text-align: center;
+  font-size: xxx-large;
+}
+
+.search-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: black;
+}
+.post {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,65 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  margin-top: 100px;
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.3s ease; /* Add transition for smooth animation */
+}
+
+.card-img {
+  height: 150px;
+  width: 200px;
+}
+
+.card-title-holder {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
+
+.card-title {
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 0; /* Start with height 0 for collapsed state */
+  transition: height 0.3s ease; /* Add transition for smooth animation */
+}
+
+.card.expanded {
+  height: 450px; /* Set the expanded height for the card */
+}
+
+.card.expanded .card-text {
+  height: 200px; /* Set the expanded height for the text container */
+}
+
+.description {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.link {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Change color */
+}
